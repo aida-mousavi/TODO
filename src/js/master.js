@@ -67,7 +67,9 @@ let ButtonAddTodo = document
         arrTodo.push(inputAddTodo.value);
         localStorage.setItem("Todo", arrTodo);
 
-        arrStatus.push(false);
+
+        arrStatus.push('false');
+        console.log(arrStatus);
         localStorage.setItem("status", arrStatus);
         creatElem();
       }
@@ -111,6 +113,8 @@ function del(s) {
   let getLocalSTATUS = localStorage.getItem("status");
   let elementSplitStatus = getLocalSTATUS.split(",");
   elementSplitStatus.splice(findIndex, 1);
+  arrStatus.splice(findIndex, 1);
+  
   localStorage.setItem("status", elementSplitStatus);
   loadLocal();
   checkOut();

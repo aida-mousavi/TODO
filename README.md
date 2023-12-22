@@ -1,5 +1,7 @@
 # TODO
 
+![todoList](https://github.com/aida-mousavi/TODO/assets/115708698/2d798f76-8f9d-49d7-9cca-fcb0ee2d3420)
+
 - [Demo Project](https://aida-mousavi.github.io/TODO/)
 
 - Developed by Aida Mousavi

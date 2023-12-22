@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="src/css/output.css" />
+  <link rel="stylesheet" href="src/css/master.css" />
+
+  <title>TODO</title>
+</head>
+
+<body>
+  <main class="w-full h-[100vh] font-body overflow-hidden">
+    <div class="h-[5vh] w-full bg-bgTop"></div>
+    <div id="mainSEC" class="h-[90vh] w-full bg-bgMain ">
+      <section class="w-[80%] sm:[60%] md:w-[35%] min-h-full bg-bgTodo mx-auto relative shadow-shadowCustom overflow-hidden">
+        <div class="text-white p-6 ">
+          <h1 class="text-5xl pb-2">Todo List</h1>
+          <p class="ps-2 text-sm pb-2">Today i need To :</p>
+          <hr class="opacity-70">
+        </div>
+        <div id="cardBox" class="h-[402px] overflow-y-scroll scroll-smooth">
+
+        </div>
+        <div class="w-full p-5 text-white absolute z-[10] bottom-1 bg-bgTodo">
+          <h2 class="text-2xl pb-2 ">Add to the todo list</h2>
+          <div class="flex">
+            <input id="inputAddTodo" maxlength="20" class="w-[70%] text-xl px-3 py-1 outline-bgRed text-black" type="text">
+            <button id="ButtonAddTodo"
+              class="w-[29%]  border-[1px] border-red-300 ms-1 bg-bgRed text-xs sm:text-base p-1 lg:p-3 font-semibold flex justify-center items-center">ADD
+              ITEM</button>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <div class="h-[6vh] w-full bg-bgTop"></div>
+  </main>
+  <script src="src/js/master.js">
+   
+  </script>
+</body>
+
+</html>
